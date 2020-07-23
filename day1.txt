@@ -263,7 +263,131 @@ Repo - A Place where you store a version after a commit.
   596  clear
   597  history
 
+============================================
+============================================
+Qs - 
+How to rename a file?
+How to commit a dir?
+How to move a file from one location to another location?
+How to add all file but commit only selected file?
 
+How to delete files?
+How to delete dir?
+How to get back to the stage of before deleted file?
+
+
+-------ADD a New file/content---------
+git add 
+git commit
+----------------
+
+-------Rename a New file---------
+Rename manually	# git mv fileaname1.txt filename2.txt
+git add 	# git mv fileaname1.txt filename2.txt
+git commit
+or 
+git mv fileaname1.txt filename2.txt
+git commit
+----------------
+
+ 628  git status
+  629  clear
+  630  ls
+  631  git mv file4.js file44.js
+  632  git status
+  633  git commit -m"renmaing a file"
+  634  clear
+  635  git status
+  636  ls
+  637  clear
+  638  ls
+  639  mkdir src
+  640  clear
+  641  ls
+  642  git status
+  643  touch file5.txt
+  644  git status
+  645  clear
+  646  ls
+  647  git status
+  648  touch src/file6.txt
+  649  clear
+  650  git status
+  651  git add .
+  652  clear
+  653  git status
+  654  git commit -"selective commit" src/file6.txt
+  655  clear
+  656  git commit m-"selective commit" src/file6.txt
+  657  git commit -m "selective commit" src/file6.txt
+  658  git status
+  659  clear
+  660  ls
+  661  git status
+  662  ls
+  663  git mv file2.py  src/
+  664  clear
+  665  git status
+  666  git commit -m"move a file location"
+  667  ls
+  668  git status
+  669  clear
+  670  git status
+  671  clear
+  672  ls
+  673  git rm file1.java
+  674  git status
+  675  ls
+  676  clear
+  677  git status
+  678  ls
+  679  git commit -m"deleting file"
+  680  git status
+  681  clear
+  682  ls
+  683  clear
+  684  git log
+  685  ls
+  686  git log
+  687  git log --oneline
+  688  clear
+  689  git log --oneline
+  690  ls
+  691  clear
+  692  git status
+  693  git log --oneline
+  694  git checkout dc1729f
+  695  clear
+  696  ls
+  697  git checkout master
+  698  ls
+  699  git log --oneline
+  700  clear
+  701  git log --oneline
+  702  git checkout 19f5b07
+  703  ls
+  704  clear
+  705  git checkout 19f5b07
+  706  git checkout master
+  707  ls
+  708  git checkout 19f5b07
+  709  clear
+  710  ls
+  711  git checkout master
+  712  clear
+  713  history
+
+
+=================
+vi - editor - default in linux
+Mode - 
+	Read only (Default)	- Save and QUIT 
+					exit without
+					:q!
+					exit and saving
+					:wq
+	Insert Mode --- press i - Write
+=================
 
 
 
