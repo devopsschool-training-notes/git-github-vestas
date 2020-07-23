@@ -388,15 +388,142 @@ Mode -
 					:wq
 	Insert Mode --- press i - Write
 =================
+=====================================================================
+Qs
+------------
+How do we share code with each other?
+---------------------------------------
+- Git allows you connect with any other remote repo using
+	- ssh	[ Remote repo machine should be enabled with ssh and network ]
+	- http  [ Remote repo machine should be enabled with http server and network ]
+
+- To Send your commits from Local repo to remote repo - PUSH
+	       -------
+- To get commits fron remote repo to local repo - PULL
+         -------
+
+Basic workflow working with remote repo
+===========================================
+First time - Clone a remote repo
+Seconds time onwards
+- To Send your commits from Local repo to remote repo - PUSH	       -------
+- To get commits fron remote repo to local repo - PULL
+         -------
 
 
+Enterprises started looking for
+	- WIKI Integ with [Remote and Central Repo]
+	- Issues tracking
+	- Mul Org and Mul Projects
+	- Role based Mach.
+	- GUI
+	- Abilility to manage mul repo.
+------------------------
+	GIT says- NO......We do not have this featuree
+
+Startups in Git
+============================
+I would make GIT enterprise ready
+- github
+	cloud		- hosted for PUBLIC - Free + Paid
+	enterprise 	- hosted for YOUR COMPANY WITHIN FIREWALL + Paid
+- gitlab
+- bitbucket
+- Amazon
+- Google
+- microsoft
+- Gerrit
+================
+	- Hosting platform	DONE
+	- has Remote repo	DONE
+	- has central repo	DONE
+	- WIKI Integ with [Remote and Central Repo]
+	- Issues tracking
+	- Mul Org and Mul Projects
+	- Role based access  mach
+	- LDAP auth
+	- GUI
+	- Abilility to manage mul repo.
+===================================================
+Workflow working with Github
+======================================
+
+USER 1
+===================
+Step 1- Register at github cloud (github.com)
+
+Step 2 - create a empty repo
+https://github.com/devopsschool-demo-temporary/vestademo
+
+Step 3 - Push your Existing repo
+git push https://github.com/devopsschool-demo-temporary/vestademo.git master
+
+USER 2
+===================
+Step 1- Register at github cloud (github.com)
+
+Step 2 - Clone Team repo 
+
+Step 3 - Create a file(s) in Workspace using editor
+
+Step 4 - Add a file to GIT repo [ Add a file from Working dir to Staging area] 
+$ git add file1.java
+
+Step 5 - 
+[ONE TIME]
+$ git config user.name "Rajesh Kumar"
+$ git config user.email "devops@rajeshkumar.xyz"
+$ git config --list
+
+Step 6 - Commit a file to Git repo [ From Staging area to Repo ]
+$ git commit -m"First Code for Demo"
+
+Rajesh Kumar@DESKTOP-6KRAAR8 MINGW64 /e/vesta/repo1 (master)
+$ git commit -m"First Code for Demo"
+[master (root-commit) 19f5b07] First Code for Demo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.java
+
+Step 7 - See a history/version 
+$ git log
+$ git show 19f5b0703006a776b8097ae2dc7811220261dfd6
+
+Step 8 - PUSH your commit to remote/central github repo
 
 
+USER 1
+===================
+Pull a updated code from uSER2 from  remote/central github repo
 
 
+USER1
+-----------
+ 501  git push https://github.com/devopsschool-demo-temporary/vestademo.git master
+  502  git log --oneline
+  503  clear
+  504  ls
+  505  ls
+  506  git pull origin master
+  507  git remote add origin https://github.com/devopsschool-demo-temporary/vestademo.git
+  508  git pull origin master
+  509  ls
+  510  history
 
 
-
+USER2
+-----------
+ 501  git clone https://github.com/devopsschool-demo-temporary/vestademo.git user2
+  502  ls
+  503  cd user2
+  504  clear
+  505  ls
+  506  git log --oneline
+  507  ls
+  508  clear
+  509  ls
+  510  touch user2.txt;git add .;git commit -m"adding as a user2"
+  511  git push origin master
+  512  history
 
 
 
