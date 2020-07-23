@@ -1,0 +1,289 @@
+1 2 3 4 5 6 7 8 9
+======================
+8105843520
+======================
+Demo - Laptop + Github.com
+Lab - Laptop + Github.com
+================================
+Start @ - 9:30 AM IST - 5:30 PM IST
+================================
+Lunch Time - 1:00  - 2:00 PM
+================================
+2 Break - Tea - Coffee - Rest - 15 mins each
+--------------------------------------------
+11:30 - for 15 mins
+3:30 - for 15 mins
+==================================
+During Demo - 
+==================================================
+What is Git?
+=========================
+	Source Code mgmt tool
+	Versioning Tool for the code
+	Open Source
+	Free
+	Compat with All OS.
+	Written in C.+++
+	Written by Linus Tovarld
+		- Father of LINUX.
+		- Reason for git - Bitkeeper (Distributed version control system)
+	Apache2 License
+	2004*** First release
+	is DISTRIBUTED
+
+What is Versioning?
+-------------------
+	I want to know some info on the CODE?
+	--------------------------
+	When this code was written?
+	What code has been written?
+	Who has written?
+	Where a code is located?
+	Why this code is written?
+======================
+V1.txt V2.txt V3.txt ==> 
+
+What is Code?
+-------------------------
+Can be open with NOTEPAD.
+	css html java python js .txt
+
+What is Not Code?
+-------------------------
+	Images, PDF, Movie, Doc
+
+===================================================
+Other tools - 
+OS & Free - RCS -> CVS -> SVN -> GIT
+Prop -> VSS -> Perforce -> ClearCase -> TFS -> AzureDevOps -> Mercury
+===================================================
+GIT IS TRULY DISTRIBUTED
+	     -----------
+===================================================
+Who can use git?
+----------------
+	ANY ONE and Everyone who wants...
+			When this code was written?
+			What code has been written?
+			Who has written?
+			Where a code is located?
+			Why this code is written?
+==============================================================
+
+What is Server-Client?
+--------------------
+OS & Free - RCS -> CVS -> SVN 
+Prop -> VSS -> Perforce -> ClearCase -> TFS -> Mercury
+
+What is DISTRIBUTED?
+--------------------
+Git
+
+========================================================
+========================================================
+How to install git?
+==============================
+	https://git-scm.com/downloads/guis
+	WINDOWS - EXE - https://git-scm.com/ 
+			- git gui	 - Ok for basic visualization
+			- git bash	- very good tool. git + basic linux commands in windows.	
+			- git cmd [ Dep ]
+			
+	MAC - DMG - https://git-scm.com/
+	LINUX - 
+		Exec
+		Repo Based
+			DEBIAN - sudo apt-get install git -y
+			RHEL - sudo yum install git -y
+==============================================================
+Lab - 15 mins
+==============================================================
+==============================================================
+Workflow 
+	Add a file(s)
+	Change a file(s)
+	Delete a file(s)
+	version a file
+	See a history
+
+Basic Workflow in Git?
+=========================================
+Step 1 - Create a Repo [ ONE time ]
+$ git init
+
+Step 2 - Create a file(s) in Workspace using editor
+
+Step 3 - Add a file to GIT repo [ Add a file from Working dir to Staging area] 
+$ git add file1.java
+
+[ONE TIME]
+$ git config user.name "Rajesh Kumar"
+$ git config user.email "devops@rajeshkumar.xyz"
+$ git config --list
+
+Step 4 - Commit a file to Git repo [ From Staging area to Repo ]
+$ git commit -m"First Code for Demo"
+
+Rajesh Kumar@DESKTOP-6KRAAR8 MINGW64 /e/vesta/repo1 (master)
+$ git commit -m"First Code for Demo"
+[master (root-commit) 19f5b07] First Code for Demo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.java
+
+Step 5 - See a history/version 
+$ git log
+$ git show 19f5b0703006a776b8097ae2dc7811220261dfd6
+
+=========================================
+$ git log
+commit 19f5b0703006a776b8097ae2dc7811220261dfd6 (HEAD -> master)
+Author: Rajesh Kumar <devops@rajeshkumar.xyz>
+Date:   Thu Jul 23 11:52:19 2020 +0530
+
+    First Code for Demo
+=========================================
+What is 19f5b0703006a776b8097ae2dc7811220261dfd6?
+	- a 40 Char universal uniq ID - 
+	- Called CHECKSUM aka commit-id aks revision
+	- SHA1
+	- Link to the CODE which you commited in repo.
+	- Size of each commit can be anything.
+	- each commit ID has parent ID [ RelationShip]
+	tecnology - Object Storage
+			- Google Drive		
+			- S3
+			- git
+			- Docker
+==============================================
+What is Staging area?? and where is that?
+
+Working Dir - A Place where you write/change a code.
+		- /e/vesta/repo1
+
+Staging Area - A Place where you can 
+		- SEE DIFf Between WORKSPACE and REPO
+		- Help you to send a file from WorkSpace to repo.
+		- - /e/vesta/repo1/.git/index
+		- git status
+
+Repo - A Place where you store a version after a commit.
+		- /e/vesta/repo1/.git/objects
+
+================================================
+
+
+==================Finalizing a place to work with versioning==============================
+
+509  cd /e
+  510  pwd
+  511  start .
+  512  cls
+  513  clear
+  514  mkdir vesta
+  515  cd vesta/
+  516  mkdir repo1
+  517  ls
+  518  cd repo1/
+  519  clear
+  520  pwd
+  521  start .
+  522  clear
+  523  ls
+  524  history
+=================Basic work flow===============================
+
+ 527  git init
+  528  start .
+  529  touch file3.css
+  530  touch file4.js
+  531  clear
+  532  ls
+  533  git add file1.java
+  534  git config user.name "Rajesh Kumar"
+  535  git config user.email "devops@rajeshkumar.xyz"
+  536  git config --list
+  537  clear
+  538  git commit -m"First Code for Demo"
+  539  clear
+  540  git log
+  541  git show 19f5b0703006a776b8097ae2dc7811220261dfd6
+  542  history
+  543  clear
+  544  git log
+  545  pwd
+  546  cd .git/
+  547  pwd
+  548  clear
+  549  pwd
+  550  ls
+  551  cd index
+  552  sl
+  553  clear
+  554  ls
+  555  cd objects
+  556  ls
+  557  clear
+  558  ls
+  559  cd ..
+  560  clear
+  561  ls
+  562  cd ..
+  563  ls
+  564  clear
+  565  git log
+  566  git show 19f5b0703006a776b8097ae2dc7811220261dfd6
+  567  clear
+
+==================Status -- Staging area==============================
+ 571  git status
+  572  clear
+  573  git status
+  574  ls
+  575  clear
+  576  git add .
+  577  git status
+  578  ls
+  579  clear
+  580  git status
+  581  git commit -m"adding all files"
+  582  clear
+  583  git status
+  584  ls
+  585  clea
+  586  clear
+  587  vi file1.java
+  588  git status
+  589  git add .
+  590  git status
+  591  git commit -m"adding a file changed in file1.java"
+  592  clear
+  593  git status
+  594  ls
+  595  git log
+  596  clear
+  597  history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
