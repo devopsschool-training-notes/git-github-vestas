@@ -255,7 +255,102 @@ UnDoing in Git?
   777  git diff b3fb528 b906836
   778  history
 
+===============================================
+Git config
+https://www.devopsschool.com/blog/bash-aliases-for-git/
+https://github.com/GitAlias/gitalias
 
+  798  clear
+  799  ls
+  800  git alias.fm "log --oneline -n 5"
+
+
+
+Ignoring Files
+======================
+  851  vi .gitignore
+  852  git status
+  853  vi .gitignore
+  854  clear
+  855  vi .gitignore
+  856  git status
+  857  vi .gitignore
+  858  git status
+  859  clear
+
+===================
+Stashing Changes
+
+ 902  git staus
+  903  git status
+  904  git stash list
+  905  git stash apply stash@{0}
+  906  git status
+  907  git stash apply stash@{1}
+  908  clear
+  909  git status
+  910  git stash list
+  911  ls
+  912  git add .
+  913  git commit -m"adding"
+  914  git list
+  915  git status
+  916  clear
+  917  git stash list
+  918  git stash -h
+  919  git stash drop
+  920  clear
+  921  git stash list
+  922  git stash drop
+  923  git stash list
+  924  history
+
+
+
+Tagging
+===================
+- branching --> Commit ID - TO WORK a LINE OF CODE
+- tagging --> Commit ID - TO use for Label a milestone
+
+925  clear
+  926  git tag --list
+  927  git tag
+  928  git tag --list
+  929  git tag relase1.0
+  930  git tag --list
+  931  git log --oneline -n2
+  932  git tag -h
+  933  clear
+  934  git log --oneline -n2
+  935  git tag -a c913072 -m"fir rel3.0"
+  936  git tag --list
+  937  git show c913072
+  938  git tag --list
+  939  git show relase1.0
+  940  clear
+  941  git tag --li
+  942  git checkout relase1.0
+  943  clear
+  944  ls
+  945  git checout master
+  946  clear
+  947  git checkout master
+  948  clear
+  949  git branch
+  950  git push origin fea1
+  951  clear
+  952  git push origin fea1.1
+  953  git tag --list
+  954  git push origin relase1.0
+  955  clear
+  956  git tag -h
+  957  clear
+  958  history
+
+
+Git Rebase
+GIT RESET Complete
+SourceTree - GUI TOOL
 
 
 
