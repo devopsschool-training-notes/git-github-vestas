@@ -73,12 +73,107 @@ Remote Repo
 ==============================
 PULL === FeTCH + Merge
 =====================================================================
+Merging Strategy?
+============================
+- Merging can happen between any 2 branch
+	- Fast Forward Merge	
+
+ 579  git log --oneline
+  580  git checkout fea1
+  581  clear
+  582  git log --oneline
+  583  ls
+  584  clear
+  585  touch fea3.txt;git add .;git commit -m"adding fea3"
+  586  git log --oneline
+  587  clear
+  588  git merge master
+  589  git checkout master
+  590  clear
+  591  git log --oneline
+  592  git diff fea1
+  593  clear
+  594  git merge fea1
+  595  git log --oneline
+  596  git branch -a
+  597  history
+
+
+
+	- recursive merge
+ 599  git log --oneline
+  600  clear
+  601  ls
+  602  touch 1.txt;git add .;git commit -m"adding 1"
+  603  git checkout fea1
+  604  touch 2.txt;git add .;git commit -m"adding 2"
+  605  clear
+  606  touch 3.txt;git add .;git commit -m"adding 3"
+  607  git checkout master
+  608  touch 4.txt;git add .;git commit -m"adding 4"
+  609  touch 5.txt;git add .;git commit -m"adding 5"
+  610  clear
+  611  git checkout fea1
+  612  touch 6.txt;git add .;git commit -m"adding 6"
+  613  clear
+  614  git log --oneline
+  615  git checkout master
+  616  clear
+  617  git log --oneline
+  618  clear
+  619  git merge fea1
+  620  git log --oneline
+  621  clear
+
+	- Cherry Picking
+
+ 625  git checkout fea1
+  626  clear
+  627  git log --oneline
+  628  touch 7.txt;git add .;git commit -m"adding 7"
+  629  clear
+  630  touch 8.txt;git add .;git commit -m"adding 8"
+  631  touch 9.txt;git add .;git commit -m"adding 9"
+  632  touch 10.txt;git add .;git commit -m"adding 10"
+  633  clear
+  634  git log --oneline
+  635  git diff master
+  636  git checkout master
+  637  clear
+  638  git log --oneline
+  639  clear
+  640  git checkout fea1
+  641  git log --oneline
+  642  clear
+  643  git checkout master
+  644  git cherry-pick 741483a
+  645  ls
+  646  git log --oneline
+
+
+What is HEAD?
+=======================================
+Tip of the Current Branch.
+	Never said TOP or MOst Latest Commit of that branch.
+
+ 567  clear
+  568  git log --oneline
+  569  git show HEAD
+  570  clear
+  571  git show HEAD~1
+  572  git log --oneline
+  573  git show HEAD~2
+  574  clear
+  575  ls
+  576  history
+
+
 
 
 
 Qs
-What is HEAD?
 
+what is submodule
 
 
 
