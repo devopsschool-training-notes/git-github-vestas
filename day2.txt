@@ -166,13 +166,105 @@ Tip of the Current Branch.
   574  clear
   575  ls
   576  history
+==============================================================================
+Pull = Fetch  + Merge - Demo
+---------------------------------
+
+
+
+
+How to resolve Conflict?
+-----------------------------
+ 711  git checkout master
+  712  ls
+  713  vi 7.txt
+  714  git add .;git commit -m
+  715  'clear
+  716  clear
+  717  git add .;git commit -m"ading"
+  718  git checkout fea1
+  719  vi 7.txt
+  720  git add .;git commit -m"ading"
+  721  clear
+  722  git checkout master
+  723  git merge fea1
+  724  git status
+  725  vi 7.txt
+  726  git status
+  727  clear
+  728  git add .
+  729  clear
+  730  git add .;git commit -m"ading"
+  731  git status
+  732  git merge fea1
+  733  history
+
+
+UnDoing in Git?
+===================
+- Getting rid of fils from workign dir?
+ 735  git status
+  736  touch clean.txt clean1.txt
+  737  ls
+  738  git status
+  739  clear
+  740  ls
+  741  git status
+  742  git clean -f -d
+  743  git status
+  744  clear
+  745  touch clean.txt clean1.txt
+  746  git status
+  747  git clean -f -d clean.txt
+  748  git status
+  749  history
+
+
+- moving a changes from staging to working dir?
+ 748  git status
+  749  history
+  750  clear
+  751  ls
+  752  git status
+  753  touch reset.txt
+  754  clear
+  755  git status
+  756  git add .
+  757  git status
+  758  git reset
+  759  clear
+  760  git status
+  761  git clean -f -d
+  762  history
+
+
+- How to revert?
+ 764  git log --oneline
+  765  clear
+  766  touch good.txt;git add .;git commit -m"adding good commit"
+  767  touch bad.txt;git add .;git commit -m"adding bad commit"
+  768  clear
+  769  git log --oneline
+  770  clear
+  771  git log --oneline -n 5
+  772  git diff b906836 b3fb528
+  773  git revert b906836
+  774  clear
+  775  git log --oneline -n 5
+  776  git diff b3fb528 c0f291e
+  777  git diff b3fb528 b906836
+  778  history
+
+
+
+
+
 
 
 
 
 
 Qs
-
 what is submodule
 
 
