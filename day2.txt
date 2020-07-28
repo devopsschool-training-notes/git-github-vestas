@@ -1,0 +1,84 @@
+==================================
+Day Agenda
+==================================
+https://www.devopsschool.com/courses/git/git-advance-training.html
+=======================================================================
+
+What is Branch?
+===============
+- is a seprarte line of dev for many reason such as..
+- is a pointer to a commit id.
+- this is maintained in ref table.
+- Without a branch - you should not word.
+- master is a default branch
+==============
+Struture of branch
+	- main ===> Daily release cycle == master
+	- bug1.0 / bug2.0
+	- feaure1/feautre2
+	- teamA/teamb
+==================
+GIT - branching is FREE
+---------------------------
+How to create a branch?
+=================================
+501  git log --oneline
+  502  git branch -a
+  503  clear
+  504  git branch fea1
+  505  git branch -a
+  506  git checkout fea1
+  507  git branch -a
+  508  clear
+  509  git log --oneline
+  510  clear
+  511  touch fea1.txt;git add .;git commit -m"ading fea1"
+  512  git log --oneline
+  513  git checkout master
+  514  clear
+  515  git log --oneline
+  516  git checkout fea1
+  517  git log --oneline
+  518  clear
+  519  git log --oneline
+  520  ls
+  521  git checkout master
+  522  ls
+  523  clear
+  524  git checkout fea1
+  525  ls
+  526  more fea1.txt
+  527  cat fea1.txt
+  528  clear
+  529  ls
+  530  touch fea2.txt;git add .;git commit -m"ading fea2"
+  531  git log --oneline
+  532  clear
+  533  git diff master
+---------------------------------------------------
+Types of Branches
+===================================================
+Local Branch	- Read & Write - You create - You work
+Remote branch	- Read Only - Git create - git uses for getting a changes from Remote repo.
+Temp Branch
+		- when you checkout remote branch OR any commit id.
+
+Local Repo
+	Local Branch
+	Remote branch
+	Temp Branch
+Remote Repo
+
+==============================
+==============================
+PULL === FeTCH + Merge
+=====================================================================
+
+
+
+Qs
+What is HEAD?
+
+
+
+
