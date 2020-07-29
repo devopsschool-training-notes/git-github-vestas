@@ -72,18 +72,28 @@ How to convert private pem to ppk
 puttygen
 
 
+============================================
+How to work with Gitlab?
+===============================
 
+Step 1. Register and login at gitlb https://gitlab.com/
+Step 2 - Create a repo 
+Step 2 - Clone it
+Step 4 - add - commit - push...
+Step 5 - share your gitlab id
 
-
-
-
-
-
-
-
-
-
-
+bhaskarmare
+sethu_vest
+himabindu12
+SureshSUKUS
+paept
+jatinpahadia
+Sathya858
+subha1812
+delhm
+sanathkumar2307
+momkh
+ChandraMouliR
 
 
 
@@ -94,3 +104,41 @@ puttygen
 gitlab
 GIT RESET Complete
 submodule
+==================================
+
+Slides	- https://www.devopsschool.com/slides/
+Tutotrials - https://www.devopsschool.com/tutorial/
+Videos
+	https://www.devopsschool.com/video
+	https://www.devopsschool.com/videos/
+Notes
+	https://github.com/devopsschool-training-notes/git-github-vestas
+PDf
+	https://www.devopsschool.com/pdf/
+Blog
+	https://www.devopsschool.com/blog
+============================
+How to reach out to me?
+www.RajeshKumar.xyz
+devops@rajeshkumar.xyz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
