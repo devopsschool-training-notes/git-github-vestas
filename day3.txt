@@ -1,0 +1,96 @@
+Git Rebase
+===================
+ 500  git init
+  501  touch 1.txt;git add .;git commit -m"adding"
+  502  touch 2.txt;git add .;git commit -m"adding 2"
+  503  clear
+  504  git branch fea1
+  505  git branhc
+  506  git branch
+  507  git log --oneline
+  508  clear
+  509  touch 3.txt;git add .;git commit -m"adding 3"
+  510  clear
+  511  ls
+  512  touch 4.txt;git add .;git commit -m"adding 4"
+  513  git checkout fea1
+  514  touch 5.txt;git add .;git commit -m"adding 5"
+  515  clear
+  516  touch 6.txt;git add .;git commit -m"adding 6"
+  517  clear
+  518  git log --oneline
+  519  gitk
+  520  git checkout master
+  521  clear
+  522  gitk
+  523  gitk
+  524  git merge fea1
+  525  clear
+  526  gitk
+  527  cd ..
+  528  ls
+  529  clear
+  530  ls
+  531  cd rebase1
+  532  clear
+  533  ls
+  534  gitk
+  535  git rebase fea1
+  536  git merge fea1
+  537  gitk
+  538  clear
+  539  history
+
+
+SourceTree - GUI TOOL
+====================================
+	GUI tool
+	Cmd line
+	By Atlassion
+	for using this - you need to have atlassion.
+	
+How to download and Install it?
+-----------------------------
+https://www.sourcetreeapp.com/
+
+====================================================================
+SSH Key
+	PUBLIC 	= id_rsa.pub		- Can share where you want ur machine acccess to be enabled.	
+	PVT key = id_rsa		- Never ever
+
+	Default ---> Which systems read during SSH.	
+	C:\Users\Rajesh Kumar\.ssh
+
+How to generate it?
+	gitbash - ssh-keygen -t rsa
+	puttygen
+
+------------------
+
+How to convert private pem to ppk
+-------------------------------
+puttygen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitlab
+GIT RESET Complete
+submodule
